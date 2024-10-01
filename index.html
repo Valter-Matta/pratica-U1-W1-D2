@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sviluppo di una pagina Web - Blog Epicode</title>
+    <style>
+      button {
+        cursor: pointer;
+        width: 100px;
+        height: auto;
+        background-color: rgb(192, 54, 205);
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: auto;
+      }
+      span {
+        font-size: medium;
+        font-weight: bold;
+      }
+      img:hover {
+        width: 115px;
+        transition-delay: 5ms;
+        cursor: pointer;
+      }
+      nav {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;
+      }
+      table {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 2px solid black;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+      footer {
+        margin-top: 3em;
+        display: flex;
+        justify-content: space-between 2em;
+      }
+      .commento {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="assets/epicode-logo.png" alt="Logo Epicode" />
+      <span>Epicode - Il Blog dei Developers</span>
+      <nav>
+        <button>Home</button>
+        <button>Arcitoli</button>
+        <button>Lavora con noi</button>
+      </nav>
+
+      <h1>
+        Come creare un template per i post di Mario Rossi - pubblicato il
+        25-10-2020
+      </h1>
+    </header>
+    <main>
+      <h2>
+        La prima cosa da fare è suddividere in blocchi logici la pagina,
+        identificando le parti comuni da apllicare a tutte le pagine
+      </h2>
+      <ul>
+        Le varie aree saranno quindi suddivise in:
+        <li>Contenuti di intestazione del tag < header >;</li>
+        <li>Contenuti centrali variavili del tag < main >(corpo principale)</li>
+        <li>Contenuti di fine pagina comuni, da inserire nel tag < footer ></li>
+      </ul>
+      <div>Formattazione del codice</div>
+      <ol>
+        Il testo dell'articolo dovrà essere formattato per identificare tutte le
+        parti da selezionare con i CSS. Percò i passi saranno:
+        <li>
+          Progettaree il markup assegnando ad ogni specifico testo il tag
+          appropriato
+        </li>
+        <li>
+          Scrivere L'HTML dei tag esterni a quelli interni e dall'alto verso il
+          basso
+        </li>
+        <li>Applicare gli stili CSS</li>
+      </ol>
+      <div>
+        Lapplicazione degli stili CSS è cresciuta negli anni fino a raggiungere
+        la diffusione pressochè totale.
+      </div>
+      <table>
+        <thead>
+          <caption>
+            Diffusione dei CSS
+          </caption>
+          <tr>
+            <!-- table row -->
+            <th>
+              Anno
+              <!-- nomi dei campi -->
+            </th>
+            <th>% di utilizzo</th>
+            <th>Supporto browser</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td>2000</td>
+          <td>20%</td>
+          <td>17%</td>
+          <tr>
+            <td>2002</td>
+            <td>35%</td>
+            <td>22%</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>80%</td>
+            <td>51%</td>
+          </tr>
+          <tr>
+            <td>2012</td>
+            <td>100%</td>
+            <td>76%</td>
+          </tr>
+        </tbody>
+      </table>
+      <div>
+        Un test di validazione potrà essere fatto tarime il tool online
+        <a href="Link Esterno">-LINK ESTERNO-</a> dedicato allo scopo. Una volta
+        ottimizzato il tutto,avremo raggiunto il nostro obbiettivo ed essere
+        stati dei veri developers come loro:
+        <iframe
+          width="868"
+          height="488"
+          src="https://www.youtube.com/embed/P9DdJb_lqkY"
+          title="Where developers gather together | dotConferences are coming!"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+    <form>
+      Vuoi Rimanere aggiornato sulle novità del Blog? Iscriviti alla nostra
+      newsletter:
+      <div>
+        <input type="text" placeholder="Inserisci la tua e-mail" />
+        <button>Iscriviti!</button>
+      </div>
+    </form>
+    <footer>
+      <h3>Articoli correlati</h3>
+
+      <div class="commento">
+        <div>Validare il codice HTML</div>
+        <div>Catgoria: Develop</div>
+        <div>Data: 18-09-2020</div>
+      </div>
+      <div class="commento">
+        <div>Correggere la sintassi</div>
+        <div>Categoria: develop</div>
+        <div>data:16-9-2020</div>
+      </div>
+      <div class="commento">
+        <div>meno kb</div>
+        <div>Categoria: ottimizzazione</div>
+        <div>data:16-9-2020</div>
+      </div>
+
+      
+    </footer>
+    <div></div>
+        Testata online di Mario Rossi, registrata con prot n.213/2018 - via
+        Luigi Einaudi 2 - Milano. P.IVA 00112233
+        <a href="#">info@epicode.school</a>
+      </div>
+  </body>
+</html>
